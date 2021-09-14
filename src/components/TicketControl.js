@@ -45,7 +45,10 @@ class TicketControl extends React.Component {
       issue: issue,
     }
     dispatch(action);
-    // this.setState({formVisibleOnPage: false});
+    const action2 = {
+      type: 'TOGGLE_FORM'
+    }
+    dispatch(action2);
   }
 
   handleChangingSelectedTicket = (id) => {
